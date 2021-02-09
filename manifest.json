@@ -1,7 +1,7 @@
 {
     "name": "Browser Lock",
     "short_name": "Browser Guard",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Locks Your Browser With a Password so that no one can access it except you.",
     "author": "N11rm44L 7w44711",
     "manifest_version": 2,
@@ -13,5 +13,15 @@
     "permissions": [
         "tabs",
         "storage"
-    ]
+    ],
+    "browser_action": {
+        "default_title": "BrowserLock",
+        "default_icon": "icons/Browserlock.png"
+    },
+    "icons": {
+        "128": "icons/128.png",
+        "64": "icons/64.png",
+        "48": "icons/48.png",
+        "16": "icons/16.png"
+    }
 }
