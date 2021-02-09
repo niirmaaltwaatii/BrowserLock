@@ -1,0 +1,17 @@
+{
+    "name": "Browser Lock",
+    "short_name": "Browser Guard",
+    "version": "1.0.0",
+    "description": "Locks Your Browser With a Password so that no one can access it except you.",
+    "author": "N11rm44L 7w44711",
+    "manifest_version": 2,
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "options_page": "options/index.html",
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}
