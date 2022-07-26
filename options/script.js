@@ -12,7 +12,7 @@ function chpwd(){
     var newpwd = document.querySelector("#newpwd").value;
     console.log(oldpwd)
     if(oldpwd==lspwd){
-        if(newpwd != "" || null){
+        if(newpwd != "" && newpwd != null){
             localStorage.setItem("pwd",newpwd);
             alert("Password Changed !!!");
         }else{
@@ -21,4 +21,5 @@ function chpwd(){
     }else{
         alert("Incorrect old password !!!");
     }
+    document.getElementByID("cp").reset();
 }
