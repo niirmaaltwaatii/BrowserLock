@@ -17,16 +17,16 @@ chrome.runtime.onStartup.addListener(function(info){
     }else{
         var ask = prompt("Enter Password");
         if(ask==lspwd){
-            alert("Enjoy !");
+            console.log(lspwd);
         }else{
-            alert("Incorrect !");
+            alert("Incorrect Password !");
             clsbrw();
         }
     }
 });
 function setnewpwd(){
     var pwd = prompt("Enter New Password to Protect Your Browser !");
-    if(pwd == ""){
+    if(pwd == "" || pwd == null){
         alert("Password can't be Empty !");
         setnewpwd();
     }else{
